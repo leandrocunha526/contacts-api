@@ -12,6 +12,8 @@ Database migrate
 
 `rails db:migrate`
 
+**Warning: don't forget to configure the `config/database.yml` file according to the your database settings.**
+
 Running
 
 `rails server`
