@@ -8,9 +8,9 @@ Install dependencies:
 
 `bundle install`
 
-Database migrate
+Database create
 
-`rails db:migrate`
+`rails db:create`
 
 **Warning: don't forget to configure the `config/database.yml` file according to the your database settings.**
 
