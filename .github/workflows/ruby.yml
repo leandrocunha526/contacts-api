@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['2.6']
+        ruby-version: ['2.5']
 
     steps:
     - uses: actions/checkout@v2
@@ -28,6 +28,9 @@ jobs:
     # change this to (see https://github.com/ruby/setup-ruby#versioning):
     # uses: ruby/setup-ruby@v1
       uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
+      with:
+        ruby-version: 2.5.5
+    - name: Set bundle
       with:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests
