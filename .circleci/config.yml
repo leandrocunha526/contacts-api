@@ -10,9 +10,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Update
+          command: bundle update listen
+      - run:
           name: Which bundler?
           command: bundle -v
       - ruby/bundle-install
-      - run:
-          name: Update
-          command: bundle update listen
