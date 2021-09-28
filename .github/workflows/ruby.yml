@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['2.6', '2.7', '3.0']
+        ruby-version: ['2.6']
 
     steps:
     - uses: actions/checkout@v2
@@ -29,7 +29,6 @@ jobs:
     # uses: ruby/setup-ruby@v1
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: ${{ matrix.ruby-version }}
         bundler: "Gemfile.lock"
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests
