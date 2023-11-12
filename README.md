@@ -2,6 +2,8 @@
 
 Rails is a web-application framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern.
 
+**NOTE: Use podman-compose.yml (podman-compose) to use the versions of Ruby and PostgreSQL (Docker registry) compatible with this application (Debian Buster is an LTS version and from next year it will be ELTS supported by Frexian).**
+
 ## Installation guide
 
 [Install Rails guide](http://guides.railsgirls.com/install)

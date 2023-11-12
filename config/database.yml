@@ -19,19 +19,19 @@ default: &default
   adapter: postgresql
   encoding: unicode
   database: contacts
-  host: localhost
+  host: db
   pool: 5
   username: postgres
-  password: admin_12345
+  password: postgres
 
 development:
   adapter: postgresql
   encoding: unicode
   database: contacts
-  host: localhost
+  host: db
   pool: 5
   username: postgres
-  password: admin_12345
+  password: postgres
 
 # The specified database role being used to connect to postgres.
 # To create additional roles in postgres see `$ createuser --help`.
@@ -63,10 +63,10 @@ test:
   adapter: postgresql
   encoding: unicode
   database: contacts
-  host: localhost
+  host: db
   pool: 5
   username: postgres
-  password: admin_12345
+  password: postgres
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -91,7 +91,7 @@ production:
   adapter: postgresql
   encoding: unicode
   database: contacts
-  host: localhost
+  host: db
   pool: 5
   username: postgres
-  password: admin_12345
+  password: postgres
